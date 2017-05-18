@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-update"
+		version="1.0.0" 
+		xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+		xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Downloader</name>
+	<description>Bolu Cordova Downloader Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,Downloader,bolu</keywords>
+    <repo></repo>
+    <issue></issue>
+    <js-module name="Downloader" src="www/Downloader.js">
+        <clobbers target="window.plugins.Downloader" />
+    </js-module>
+	
+	<!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Downloader" >
+                <param name="android-package" value="com.bolu.cordova.downloader.Downloader"/>
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+		
+		<config-file parent="/manifest/application" target="AndroidManifest.xml"></config-file>
+		
+		<source-file src="src/android/Downloader.java" target-dir="src/com/bolu/cordova/downloader"></source-file>
+		
+    </platform>
+	
+</plugin>
+
+
+
+
+
