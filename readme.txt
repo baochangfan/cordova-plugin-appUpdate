@@ -1,1 +1,1 @@
-调用方式window.plugins.Downloader.downloadFile( updateUrl );
+璋冪敤鏂规硶锛寃indow.plugins.Downloader.downloadFile( updateUrl );
